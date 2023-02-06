@@ -3,8 +3,13 @@ package com.dddqmmx.surf.server.socket.tcp;
 import com.dddqmmx.surf.server.util.MessageUtil;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TCPServerThread extends Thread{
 
@@ -21,7 +26,10 @@ public class TCPServerThread extends Thread{
 
     private Socket socket = null;
     private String sessionId = null;
-    private BufferedOutputStream bos = null;
+    private BufferedOutputStream bufferedOutputStream = null;
+    private BufferedInputStream bufferedInputStream = null;
+
+    public static Map<Byte,ByteArrayOutputStream> byteArrayOutputStreamMap = new HashMap<>();
 
     public TCPServerThread(Socket socket,String sessionId) {
         this.socket = socket;
@@ -31,7 +39,48 @@ public class TCPServerThread extends Thread{
     @Override
     public void run() {
         try {
-            bos = new BufferedOutputStream(socket.getOutputStream());
+            bufferedOutputStream = new BufferedOutputStream(socket.getOutputStream());
+            bufferedInputStream = new BufferedInputStream(socket.getInputStream());
+            send("烂裤裆後藤希");
+            int o = 0;
+            while(true) {
+                byte[] by = new byte[1024+2];
+                int res = 0;
+                try {
+                    res = bufferedInputStream.read(by);
+                    if (by[1]==1){
+                        byte messageId = by[0];
+                        // 利用String构造方法的形式，将字节数组转化成字符串打印出来
+                        if (byteArrayOutputStreamMap.containsKey(messageId)){
+                            ByteArrayOutputStream byteArrayOutputStream = byteArrayOutputStreamMap.get(messageId);
+                            byteArrayOutputStream.write(by,2,res-2);
+                            byteArrayOutputStream.flush();
+                            byteArrayOutputStream.close();
+                        }else{
+                            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                            byteArrayOutputStream.write(by,2,res-2);
+                            byteArrayOutputStream.flush();
+                            byteArrayOutputStream.close();
+                            byteArrayOutputStreamMap.put(messageId,byteArrayOutputStream);
+                        }
+                        StringBuffer sb = new StringBuffer();
+                        for (int i = 0; i < by.length; i++)
+                        {
+                            sb.append("{"+by[i]+"},");
+                        }
+                        System.out.println(sb);
+                        System.out.println("ssss"+Arrays.toString(byteArrayOutputStreamMap.get(messageId).toByteArray()));
+                        System.out.println(byteArrayOutputStreamMap.get(messageId).toString(StandardCharsets.UTF_8));
+                    /*System.out.println(sb);
+                    String receive = new String(by, 2, res);
+                    System.out.println("用户" + sendUser + "\t" + format + ":");
+                    System.out.println(receive);*/
+                    }
+                    System.out.println(o++);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -40,19 +89,19 @@ public class TCPServerThread extends Thread{
     public void send(String message){
         byte[] sb = message.getBytes(); // 转化为字节数组
         ArrayList<byte[]> newByteArr = MessageUtil.reviseArr(sb, getMessageId());
-/*        StringBuffer stringBuffer = new StringBuffer();;
-        for (int i = 0; i < newByteArr.length; i++)
-        {
-            stringBuffer.append("{"+newByteArr[i]+"},");
+        int i = 0;
+        for (byte[] bytes : newByteArr) {
+            System.out.println(i++);
+            System.out.println(Arrays.toString(bytes));
+            BufferedOutputStream ps = null;
+            try {
+                ps = new BufferedOutputStream(socket.getOutputStream());
+                ps.write(bytes);   // 写入输出流，将内容发送给客户端的输入流
+                ps.flush();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-        System.out.println(stringBuffer);
-        try {
-            bos.write(newByteArr);  // 把内容发给服务器
-            bos.flush();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }*/
-
     }
 
     public byte getMessageId(){
