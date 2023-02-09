@@ -41,10 +41,10 @@ public class TCPServerThread extends Thread{
         try {
             bufferedOutputStream = new BufferedOutputStream(socket.getOutputStream());
             bufferedInputStream = new BufferedInputStream(socket.getInputStream());
-            send("烂裤裆後藤希");
+            send("烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希烂裤裆後藤希123");
             int o = 0;
             while(true) {
-                byte[] by = new byte[1024+2];
+                byte[] by = new byte[1024+3];
                 int res = 0;
                 try {
                     res = bufferedInputStream.read(by);
@@ -53,12 +53,12 @@ public class TCPServerThread extends Thread{
                         // 利用String构造方法的形式，将字节数组转化成字符串打印出来
                         if (byteArrayOutputStreamMap.containsKey(messageId)){
                             ByteArrayOutputStream byteArrayOutputStream = byteArrayOutputStreamMap.get(messageId);
-                            byteArrayOutputStream.write(by,2,res-2);
+                            byteArrayOutputStream.write(by,3,res-3);
                             byteArrayOutputStream.flush();
                             byteArrayOutputStream.close();
                         }else{
                             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                            byteArrayOutputStream.write(by,2,res-2);
+                            byteArrayOutputStream.write(by,3,res-3);
                             byteArrayOutputStream.flush();
                             byteArrayOutputStream.close();
                             byteArrayOutputStreamMap.put(messageId,byteArrayOutputStream);
@@ -71,12 +71,8 @@ public class TCPServerThread extends Thread{
                         System.out.println(sb);
                         System.out.println("ssss"+Arrays.toString(byteArrayOutputStreamMap.get(messageId).toByteArray()));
                         System.out.println(byteArrayOutputStreamMap.get(messageId).toString(StandardCharsets.UTF_8));
-                    /*System.out.println(sb);
-                    String receive = new String(by, 2, res);
-                    System.out.println("用户" + sendUser + "\t" + format + ":");
-                    System.out.println(receive);*/
+
                     }
-                    System.out.println(o++);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -87,13 +83,15 @@ public class TCPServerThread extends Thread{
     }
 
     public void send(String message){
+        byte messageId = getMessageId();
         byte[] sb = message.getBytes(); // 转化为字节数组
-        ArrayList<byte[]> newByteArr = MessageUtil.reviseArr(sb, getMessageId());
+        ArrayList<byte[]> newByteArr = MessageUtil.reviseArr(sb, messageId);
         int i = 0;
+        BufferedOutputStream ps = null;
+        System.out.println(newByteArr.size());
         for (byte[] bytes : newByteArr) {
             System.out.println(i++);
             System.out.println(Arrays.toString(bytes));
-            BufferedOutputStream ps = null;
             try {
                 ps = new BufferedOutputStream(socket.getOutputStream());
                 ps.write(bytes);   // 写入输出流，将内容发送给客户端的输入流
@@ -102,6 +100,7 @@ public class TCPServerThread extends Thread{
                 e.printStackTrace();
             }
         }
+
     }
 
     public byte getMessageId(){
